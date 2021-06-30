@@ -15,7 +15,7 @@ def read_co2():
     data = s.read(9)
 
     if len(data) != 9:
-        print("受信バイト数が正しくありません。受信バイト数：{0}byte", len(data))
+        print(f"受信バイト数が正しくありません。受信バイト数：{len(data)}byte")
         s.reset_input_buffer()
         return None
 
