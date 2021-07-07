@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 1病周期でCO2値を取得するプログラム
 センサ:MH-Z14B
@@ -7,7 +8,7 @@ import serial
 import time
 
 
-s = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=0.1)
+s = serial.Serial("/dev/ttyAMA0", baudrate=9600, timeout=0.1)
 
 def read_co2():
     # MH-Z14Bにコマンド送信&レスポンス受信
